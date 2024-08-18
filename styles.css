@@ -1,0 +1,310 @@
+body {
+    font-family: "Segoe UI", Verdana, Helvetica, Arial, sans-serif;
+    font-size: 11px;
+    background-image: url('path/to/your/background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    color: white;
+}
+
+.containerBreadcrumb {
+    margin-top: 20px;
+}
+
+.page-title {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 6em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.breadcrumb {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    background: none;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    content: ">";
+    padding: 0 8px;
+    color: #fff;
+}
+
+.breadcrumb-item a {
+    text-decoration: none;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.breadcrumb-item a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb-item.active {
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.coverflow-container-abajo{
+    
+}
+
+.coverflow-container-arriba {
+    margin-bottom: 60px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transform: translateZ(0);
+    transform-style: preserve-3d;
+    will-change: transform;
+    overflow: hidden;
+}
+
+.coverflow-container-abajo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    /* Ajusta este valor según tus necesidades */
+    margin: 0 auto;
+
+}
+
+.photos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.coverflow,
+.photos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    overflow-x: auto;
+    padding: 20px 0;
+}
+
+
+.cover {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    margin: auto;
+    will-change: transform;
+    z-index: 1;
+    transition: transform 0.3s ease;
+}
+
+.reflected {
+  
+}
+
+.cover:hover {
+    transform: scale(1.05);
+    /* Efecto de zoom más sutil */
+}
+
+.custom-img {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+
+.custom-img:hover {
+    border-color: #007bff;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.coverflow .cover {
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+    font-size: 1000%;
+    border: solid 2px rgba(0, 0, 0, 0);
+    text-align: center;
+    background: linear-gradient(to bottom, #e2e2e287 0%, #dbdbdb87 50%, #d1d1d17e 51%, #fefefe7a 100%);
+}
+
+.coverflow .cover.current {
+    opacity: 1;
+    border-bottom: none;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0);
+    background: linear-gradient(to bottom, #ffffff75 0%, #fdfbfb8a 50%, #ededed76 51%, #ffffff7d 100%);
+    z-index: 2;
+}
+
+.coverflow .cover,
+.photos .cover {
+    width: 200px;
+    /* Permite que el plugin maneje el tamaño */
+    height: 200px;
+    cursor: pointer;
+
+}
+
+.photos .cover {
+    max-width: 320px;
+    max-height: 240px;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+    will-change: transform;
+    z-index: 1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    background: none;
+    border-radius: 8px; /* Añade bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Añade una sombra sutil */
+    -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0, 0, 0, 0.103) 0%, rgba(0,0,0,0.2) 100%);
+}
+.photos .cover:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.coverflow .cover.current:after {
+    content: ' ';
+    background-color: rgba(255, 255, 255, 0);
+    display: block;
+    position: absolute;
+    width: 132px;
+    height: 16px;
+    left: -16px;
+    bottom: -16px;
+}
+
+.coverflow .cover:hover,
+.photos .cover:hover {
+    transform: scale(1.05);
+    
+}
+
+.photos .cover.current {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.coverflow .cover.current,
+.photos .cover.current {
+    border: solid 2px black;
+    box-shadow: 0 0 16px rgba(0, 0, 0, .5);
+    background: linear-gradient(to bottom, #ffffff 0%, #f3f3f3 50%, #ededed 51%, #ffffff 100%);
+}
+
+.photos .cover {
+  
+}
+
+#photos-info {
+    position: relative;
+    text-align: center;
+    z-index: 1000;
+    text-shadow: 0 0 8px rgb(7, 241, 89);
+}
+
+#photos-name {
+    font-size: 200%;
+    font-weight: bold;
+    margin-top: 1%;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.tituloArriba {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.tituloAbajo {
+    width: 100%;
+    text-align: center;
+}
+
+.tituloAbajo {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 100px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+
+}
+
+
+
+.cover-link:hover {
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .cover {
+        width: calc(33.33% - 20px);
+    }
+
+    .photo-item {
+        width: 100px;
+    }
+
+    .photo-name {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cover {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (min-width: 768px) {
+    .coverflow-container {
+        margin-bottom: 80px;
+    }
+
+    .coverflow-divider {
+        margin: 60px 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    .coverflow-container {
+        margin-bottom: 100px;
+    }
+
+    .coverflow-divider {
+        margin: 80px 0;
+    }
+}

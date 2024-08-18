@@ -1,0 +1,16 @@
+body{
+    font-family: Arial, sans-serif;
+    background-image: url('imagenes_tienda/tienda\ \(10\).jpg');
+    background-size: cover;
+    /* Hace que la imagen cubra toda la página */
+    background-position: center;
+    /* Centra la imagen en la página */
+    background-repeat: no-repeat;
+    /* Evita que la imagen se repita */
+    margin: 0;
+    /* Elimina cualquier margen predeterminado */
+    padding: 0;
+    /* Elimina cualquier padding predeterminado */
+    background-attachment: fixed;
+    min-height: 100vh;
+}

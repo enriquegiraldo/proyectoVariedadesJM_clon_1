@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creaciones</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Coverflow CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/style_tienda.css">
+
+</head>
+
+<body>
+    <div class="containerBreadcrumb">
+        <h1 class="page-title">VARIEDADES JM</h1>
+        <h2 class="page-title">Creaciones</h2>
+
+        <nav aria-label="breadcrumb" class="my-custom-breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="Tienda.html">INICIO</a></li>
+                <li class="breadcrumb-item"><a href="Tienda.html">Tienda</a></li>
+                <li class="breadcrumb-item"><a href="Productos.html">Productos</a></li>
+                <li class="breadcrumb-item"><a href="Creaciones.html">Creaciones</a></li>
+                <li class="breadcrumb-item"><a href="anchetas.html">anchetas</a></li>
+                <li class="breadcrumb-item"><a href="camisetas.html">camisetas</a></li>
+                <li class="breadcrumb-item"><a href="desayunos.html">desayunos</a></li>
+                <li class="breadcrumb-item"><a href="gorras.html">gorras</a></li>
+                <li class="breadcrumb-item"><a href="tecnologias.html">tecnologias</a></li>
+                <li class="breadcrumb-item active" aria-current="page"></li>
+            </ol>
+        </nav>
+    </div>
+    <div class="coverflow-container-arriba">
+        <h2 class="tituloArriba">ESCOGE EL SERVICIO</h2>
+
+        <div style="position:relative;background:rgba(255, 255, 255, 0);z-index:1000;padding:10px">
+            <button id="first">PRIMERO</button>
+            <button id="goto6">EL MEDIO</button>
+            <button id="last">ÚLTIMO</button>
+            <br /><label for="keyboard"><input type="checkbox" id="keyboard" checked />Keyboard</label>
+            <br /><label for="click"><input type="checkbox" id="click" checked />Click/tap</label>
+            <br /><label for="wheel"><input type="checkbox" id="wheel" checked />Scroll wheel</label>
+        </div>
+
+
+        <div>
+            <div class="coverflow" autofocus>
+
+                <a href="/Creaciones.html" class="cover"><img src="imagenes_tienda/tienda (1).avif" alt="colombia feliz"
+                        class="custom-img"></a>
+                <a href="/tecnologias.html" class="cover"><img src="imagenes_tienda/tecnologias.jpg"
+                        alt="colombia felizB" class="custom-img"></a>
+                <a href="/seccion-c" class="cover"><img src="imagenes_tienda/tienda (1).png" alt="colombia felizC"
+                        class="custom-img"></a>
+                <a href="/seccion-c" class="cover"><img src="imagenes_tienda/tienda (10).jpg" alt="colombia felizD"
+                        class="custom-img"></a>
+                <a href="/seccion-c" class="cover"><img src="imagenes_tienda/tienda (11).jpg" alt="vcolombia felizC"
+                        class="custom-img"></a>
+                <a href="/seccion-c" class="cover"><img src="imagenes_tienda/tienda (2).avif" alt="colombia felizC"
+                        class="custom-img"></a>
+                <a href="/seccion-c" class="cover"><img src="imagenes_tienda/tienda (2).jpg" alt="colombia felizC"
+                        class="custom-img"></a>
+                <a href="/seccion-c" class="cover"><img src="imagenes_tienda/tienda (2).png" alt="colombia felizC"
+                        class="custom-img"></a>
+                <a href="/seccion-c" class="cover"><img src="imagenes_tienda/tienda (3).jpg" alt="colombia felizC"
+                        class="custom-img"></a>
+                <a href="/seccion-c" class="cover"><img src="imagenes_tienda/tienda (4).jpg" alt="colombia felizC"
+                        class="custom-img"></a>
+                <a href="/seccion-c" class="cover"><img src="imagenes_tienda/tienda (5).jpg" alt="colombia felizC"
+                        class="custom-img"></a>
+                <a href="/seccion-c" class="cover"><img src="imagenes_tienda/tienda (6).jpg" alt="colombia felizC"
+                        class="custom-img"></a>
+                <!-- ... continúa con el resto de las imágenes ... -->
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="coverflow-container-abajo">
+        <h2 class="tituloAbajo">SELECCIONE EL PRODUCTO</h2>
+
+
+        <div class="photos" autofocus>
+            <img class="cover" data-name="Attic" src="imagenes/attic.jpg" alt="Attic" title="PERRO SARNOSO" />
+            <img class="cover" data-name="Aurora Borealis" src="imagenes/aurora.jpg" alt="Aurora Borealis" />
+            <img class="cover" data-name="Barbecued steak" src="imagenes/barbecue.jpg" alt="Barbecued steak" />
+            <img class="cover" data-name="Black swan" src="imagenes/blackswan.jpg" alt="Black swan" />
+            <img class="cover" data-name="Chess" src="imagenes/chess.jpg" alt="Chess" />
+            <img class="cover" data-name="Fire" src="imagenes/fire.jpg" alt="Fire" />
+            <img class="cover" data-name="Keyboard" src="imagenes/keyboard.jpg" alt="Keyboard" />
+            <img class="cover" data-name="Locomotive" src="imagenes/locomotive.jpg" alt="Locomotive" />
+            <img class="cover" data-name="Novo-Diveevo monastery" src="imagenes/diveevo.jpg"
+                alt="Novo-Diveevo monastery" />
+            <img class="cover" data-name="Person" src="imagenes/person.jpg" alt="Person" />
+            <img class="cover" data-name="Rose" src="imagenes/rose.jpg" alt="Rose" />
+            <img class="cover" data-name="Seagull" src="imagenes/seagull.jpg" alt="Seagull" />
+            <img class="cover" data-name="Solar power" src="imagenes/solarpower.jpg" alt="Solar power" />
+        </div>
+    </div>
+    <div id="photos-info">
+        <div id="photos-name"></div>
+    </div>
+
+    </div>
+    <!-- jQuery/jQueryUI (hosted) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.js"></script>
+    <!-- Optional: Reflection -->
+    <script src="reflection.js"></script>
+    <!-- interpolate, depends on jQ 1.8.0+ -->
+    <script src="jquery.interpolate.min.js"></script>
+
+    <script src="jquery.touchSwipe.min.js"></script>
+    <!-- Coverflow -->
+    <script src="jquery.coverflow.js"></script>
+    <script src="script.js"></script>
+    <script src="script/script_tienda.js"></script>
+
+</body>
+
+</html>
