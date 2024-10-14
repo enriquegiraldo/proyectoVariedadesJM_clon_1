@@ -1,0 +1,187 @@
+{
+    "titulo": "Tienda",
+    "subtitulo": "VARIEDADES JM",
+    "navegacion": [
+        {
+            "nombre": "INICIO",
+            "url": "Tienda.html"
+        },
+        {
+            "nombre": "Tienda",
+            "url": "Tienda.html"
+        },
+        {
+            "nombre": "Productos",
+            "url": "Productos.html"
+        },
+        {
+            "nombre": "Creaciones",
+            "url": "Creaciones.html"
+        },
+        {
+            "nombre": "anchetas",
+            "url": "anchetas.html"
+        },
+        {
+            "nombre": "camisetas",
+            "url": "camisetas.html"
+        },
+        {
+            "nombre": "desayunos",
+            "url": "desayunos.html"
+        },
+        {
+            "nombre": "gorras",
+            "url": "gorras.html"
+        },
+        {
+            "nombre": "tecnologias",
+            "url": "tecnologias.html"
+        }
+    ],
+    "coverflowArriba": [
+        {
+            "url": "/Creaciones.html",
+            "imagen": "imagenes_tienda/tienda (1).avif",
+            "alt": "colombia feliz"
+        },
+        {
+            "url": "/tecnologias.html",
+            "imagen": "imagenes_tienda/tecnologias.jpg",
+            "alt": "colombia felizB"
+        },
+        {
+            "url": "/seccion-c",
+            "imagen": "imagenes_tienda/tienda (1).png",
+            "alt": "colombia felizC"
+        },
+        {
+            "url": "/seccion-c",
+            "imagen": "imagenes_tienda/tienda (10).jpg",
+            "alt": "colombia felizD"
+        },
+        {
+            "url": "/seccion-c",
+            "imagen": "imagenes_tienda/tienda (11).jpg",
+            "alt": "colombia felizE"
+        },
+        {
+            "url": "/seccion-c",
+            "imagen": "imagenes_tienda/tienda (2).avif",
+            "alt": "colombia felizF"
+        },
+        {
+            "url": "/seccion-c",
+            "imagen": "imagenes_tienda/tienda (2).jpg",
+            "alt": "colombia felizG"
+        },
+        {
+            "url": "/seccion-c",
+            "imagen": "imagenes_tienda/tienda (2).png",
+            "alt": "colombia felizH"
+        },
+        {
+            "url": "/seccion-c",
+            "imagen": "imagenes_tienda/tienda (3).jpg",
+            "alt": "colombia felizI"
+        },
+        {
+            "url": "/seccion-c",
+            "imagen": "imagenes_tienda/tienda (4).jpg",
+            "alt": "colombia felizJ"
+        },
+        {
+            "url": "/seccion-c",
+            "imagen": "imagenes_tienda/tienda (5).jpg",
+            "alt": "colombia felizK"
+        },
+        {
+            "url": "/seccion-c",
+            "imagen": "imagenes_tienda/tienda (6).jpg",
+            "alt": "colombia felizL"
+        },
+        {
+            "url": "/seccion-c",
+            "imagen": "imagenes_tienda/tienda (7).jpg",
+            "alt": "colombia felizM"
+        },
+        {
+            "url": "/seccion-c",
+            "imagen": "imagenes_tienda/tienda (8).jpg",
+            "alt": "colombia felizN"
+        },
+        {
+            "url": "/seccion-c",
+            "imagen": "imagenes_tienda/tienda (9).jpg",
+            "alt": "colombia felizO"
+        }
+    ],
+    "coverflowAbajo": [
+        {
+            "nombre": "Attic",
+            "imagen": "imagenes/attic.jpg",
+            "alt": "Attic",
+            "titulo": "PERRO SARNOSO"
+        },
+        {
+            "nombre": "Aurora Borealis",
+            "imagen": "imagenes/aurora.jpg",
+            "alt": "Aurora Borealis"
+        },
+        {
+            "nombre": "Barbecued steak",
+            "imagen": "imagenes/barbecue.jpg",
+            "alt": "Barbecued steak"
+        },
+        {
+            "nombre": "Black swan",
+            "imagen": "imagenes/blackswan.jpg",
+            "alt": "Black swan"
+        },
+        {
+            "nombre": "Chess",
+            "imagen": "imagenes/chess.jpg",
+            "alt": "Chess"
+        },
+        {
+            "nombre": "Fire",
+            "imagen": "imagenes/fire.jpg",
+            "alt": "Fire"
+        },
+        {
+            "nombre": "Keyboard",
+            "imagen": "imagenes/keyboard.jpg",
+            "alt": "Keyboard"
+        },
+        {
+            "nombre": "Locomotive",
+            "imagen": "imagenes/locomotive.jpg",
+            "alt": "Locomotive"
+        },
+        {
+            "nombre": "Novo-Diveevo monastery",
+            "imagen": "imagenes/diveevo.jpg",
+            "alt": "Novo-Diveevo monastery"
+        },
+        {
+            "nombre": "Person",
+            "imagen": "imagenes/person.jpg",
+            "alt": "Person"
+        },
+        {
+            "nombre": "Rose",
+            "imagen": "imagenes/rose.jpg",
+            "alt": "Rose"
+        },
+        {
+            "nombre": "Seagull",
+            "imagen": "imagenes/seagull.jpg",
+            "alt": "Seagull"
+        },
+        {
+            "nombre": "Solar power",
+            "imagen": "imagenes/solarpower.jpg",
+            "alt": "Solar power"
+        }
+    ]
+}

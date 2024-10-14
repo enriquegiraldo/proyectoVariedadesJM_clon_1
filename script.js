@@ -35,3 +35,18 @@ document.querySelectorAll('.photo-item').forEach(item => {
   const name = item.querySelector('.photo-name');
   name.textContent = img.getAttribute('data-name');
 });
+document.addEventListener('DOMContentLoaded', function() {
+  fetch('tienda.json')
+      .then(response => response.json())
+      .then(data => {
+          const template = Handlebars.compile(document.body.innerHTML);
+          document.body.innerHTML = template(data);
+          
+          // Inicializa los coverflow y otros scripts aquí
+          inicializarCoverflow();
+      });
+});
+
+function inicializarCoverflow() {
+  // Tu código para inicializar los coverflow
+}
